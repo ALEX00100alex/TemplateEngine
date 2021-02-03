@@ -8,7 +8,7 @@ const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
-// const render = require("./lib/htmlRenderer");
+const render = require("./lib/htmlRenderer");
 const { listenerCount } = require("process");
 const { create } = require("domain");
 const employees = [];
@@ -113,7 +113,9 @@ async function addEmployee () {
 function createHTML () {
     //generate HTML from created employees
     //if successful, redirect to finish
-    console.log(employees);
+    const html = render(employees);
+    fs.writeFileSync("./output/team.html",html);
+    finishEmployeeList();
 }
 
 function finishEmployeeList () {
