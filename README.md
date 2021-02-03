@@ -29,7 +29,7 @@ THEN they exit the application, and the HTML is generated
 ## Screenshots 
 
 Here is a screenshot of a generated Team Template example:
-
+![image](https://user-images.githubusercontent.com/53154900/106688312-b31b5980-6582-11eb-8bea-22a0c8fe1b8c.png)
 
 ## Contribute
 
@@ -37,7 +37,7 @@ Want to contribute? You can find the github repo here: https://github.com/ALEX00
 
 ## Links
 
-Github Website link: 
+Github Website link: https://alex00100alex.github.io/TemplateEngine/ 
 
 ## Credits
 
